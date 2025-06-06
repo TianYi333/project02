@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed May 28 16:00:47 2025
+# Process ID: 104648
+# Current directory: D:/ASUS-PC/Desktop/temporary/test/Vivado2021/2025.5.28-1/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/synth_1
+# Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+# Log file: D:/ASUS-PC/Desktop/temporary/test/Vivado2021/2025.5.28-1/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/synth_1/system_wrapper.vds
+# Journal file: D:/ASUS-PC/Desktop/temporary/test/Vivado2021/2025.5.28-1/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace

@@ -1,0 +1,326 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:33 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 102852
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon May 26 16:28:30 CST 2025
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 28
+
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	E:/Xilinx2021/Vivado/2021.1/tps/win64/jre11.0.2
+Java executable: 	E:/Xilinx2021/Vivado/2021.1/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ASUS-PC
+User home directory: C:/Users/ASUS-PC
+User working directory: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/Xilinx2021/Vivado
+HDI_APPROOT: E:/Xilinx2021/Vivado/2021.1
+RDI_DATADIR: E:/Xilinx2021/Vivado/2021.1/data
+RDI_BINDIR: E:/Xilinx2021/Vivado/2021.1/bin
+
+Vivado preferences file: C:/Users/ASUS-PC/AppData/Roaming/Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: C:/Users/ASUS-PC/AppData/Roaming/Xilinx/Vivado/2021.1/
+Vivado layouts directory: C:/Users/ASUS-PC/AppData/Roaming/Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	E:/Xilinx2021/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/vivado.log
+Vivado journal file: 	D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/vivado.jou
+Engine tmp dir: 	D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/.Xil/Vivado-102852-FXT333
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Xilinx2021/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: E:/Xilinx2021/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: E:/Xilinx2021/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: E:/Xilinx2021/Vivado/2021.1
+XILINX_SDK: E:/Xilinx2021/Vitis/2021.1
+XILINX_VITIS: E:/Xilinx2021/Vitis/2021.1
+XILINX_VIVADO: E:/Xilinx2021/Vivado/2021.1
+XILINX_VIVADO_HLS: E:/Xilinx2021/Vivado/2021.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,298 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 74 MB (+75018kb) [00:00:03]
+// [Engine Memory]: 1,298 MB (+1210055kb) [00:00:03]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: D:\ASUS-PC\Desktop\temporary\Mini_ctrl_brd_zynq\Mini_ctrl_brd_zynq.xpr. Version: Vivado v2021.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 104 MB (+27449kb) [00:00:05]
+// [GUI Memory]: 110 MB (+823kb) [00:00:05]
+// [GUI Memory]: 117 MB (+1691kb) [00:00:06]
+// [GUI Memory]: 129 MB (+6948kb) [00:00:06]
+// WARNING: HEventQueue.dispatchEvent() is taking  1653 ms.
+// Tcl Message: open_project D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx2021/Vivado/2021.1/data/ip'. 
+// Project name: Mini_ctrl_brd_zynq; location: D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq; part: xc7z020clg400-2
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,298 MB. GUI used memory: 91 MB. Current time: 5/26/25, 4:28:31 PM CST
+// [GUI Memory]: 136 MB (+579kb) [00:00:12]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 37 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 2, false); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // D
+// Elapsed time: 257 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 4, false); // D
+// [GUI Memory]: 147 MB (+3995kb) [00:05:05]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 4, false, false, false, false, false, true); // D - Double Click
+// bz (cs):  Opening Editor : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1095 ms.
+// [GUI Memory]: 155 MB (+904kb) [00:05:07]
+dismissDialog("Opening Editor"); // bz
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 4, false); // D
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ak
+selectMenuItem((HResource) null, "Launch Vitis IDE"); // an
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// bz (cs):  Launch Vitis IDE : addNotify
+dismissDialog("Launch Vitis IDE"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,426 MB. GUI used memory: 95 MB. Current time: 5/26/25, 4:39:51 PM CST
+// [Engine Memory]: 1,828 MB (+487642kb) [00:12:25]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 95 MB. Current time: 5/26/25, 5:09:51 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 84 MB. Current time: 5/26/25, 5:39:52 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  53238241 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 84 MB. Current time: 5/27/25, 8:54:22 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 9:24:24 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 9:54:26 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 10:24:29 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 10:54:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 11:24:35 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 11:54:37 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 12:24:40 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 12:54:43 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 1:24:46 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 1:54:48 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 2:24:51 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 2:54:54 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 3:24:57 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 3:55:00 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 4:25:02 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 4:55:05 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 5:25:08 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/27/25, 5:55:11 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  52460252 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 83 MB. Current time: 5/28/25, 8:51:59 AM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1065 ms. Increasing delay to 3195 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 82 MB. Current time: 5/28/25, 9:22:02 AM CST
+// Elapsed time: 147277 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// bz (cs):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd} 
+// Tcl Message: Reading block design file <D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1140 ms.
+// JavaFX intialization before: 1748395731853
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// Tcl Message: Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_125M Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:user:Pro_FPGA_ctrl:1.0 - Pro_FPGA_ctrl_0 Successfully read diagram <system> from block design file <D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd> 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// JavaFX initialization after: 1748395732384
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cs):  Re-customize IP : addNotify
+// r (cs): Re-customize IP: addNotify
+// ce (r): Configuration Presets: addNotify
+dismissDialog("Re-customize IP"); // N
+selectButton("MIO Configuration", "MIO Configuration"); // k
+selectButton("PS-PL Configuration", "PS-PL Configuration"); // k
+selectButton("Zynq Block Design", "Zynq Block Design"); // k
+// [GUI Memory]: 168 MB (+5439kb) [41:00:53]
+dismissDialog("Re-customize IP"); // r
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 3, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 179 MB (+2005kb) [41:00:59]
+// WARNING: HEventQueue.dispatchEvent() is taking  1088 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// bz (cs):  Opening Editor : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1077 ms.
+dismissDialog("Opening Editor"); // bz
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 2, false, false, false, false, false, true); // D - Double Click
+// bz (cs):  Opening Editor : addNotify
+dismissDialog("Opening Editor"); // bz
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ak
+selectCodeEditor("system_wrapper.v", 245, 310); // bP
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // an
+// bz (cs):  Opening Editor : addNotify
+dismissDialog("Opening Editor"); // bz
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectCodeEditor("system_wrapper.v", 298, 140); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 2, false, false, false, false, false, true); // D - Double Click
+// bz (cs):  Opening Editor : addNotify
+dismissDialog("Opening Editor"); // bz
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // an
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cs): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.gen/sources_1/bd/system/hdl/system_wrapper.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.gen/sources_1/bd/system/hdl/system_wrapper.v 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // an
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// aI (cs): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cs):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] 
+// Tcl Message: INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'system' - hence not re-generating. 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// 'br' command handler elapsed time: 4 seconds
+dismissDialog("Managing Output Products"); // bz
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // D - Node
+// Elapsed time: 43 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // an
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cs): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create HDL Wrapper"); // a
+// Tcl Message: make_wrapper -files [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -top 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse d:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.gen/sources_1/bd/system/hdl/system_wrapper.v 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 4); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 4); // D
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // an
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cs): Create HDL Wrapper: addNotify
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'af' command handler elapsed time: 10 seconds
+dismissDialog("Create HDL Wrapper"); // a
+// Tcl Message: make_wrapper -files [get_files D:/ASUS-PC/Desktop/temporary/Mini_ctrl_brd_zynq/Mini_ctrl_brd_zynq.srcs/sources_1/bd/system/system.bd] -top 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v), system_i : system (system.bd)]", 2, true); // D - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_wrapper (system_wrapper.v)]", 1); // D
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+closeView((HResource) null, "Address Map"); // AddressMapHtml
+closeView(PAResourceOtoP.PAViews_ADDRESS_EDITOR, "Address Editor"); // c
+// HMemoryUtils.trashcanNow. Engine heap size: 1,838 MB. GUI used memory: 118 MB. Current time: 5/28/25, 9:52:04 AM CST

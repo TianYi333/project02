@@ -1,0 +1,296 @@
+14:37:39 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\ASUS-PC\Desktop\temporary\Vivado2021\Mini_ctrl_brd_zynq\Vitis\temp_xsdb_launch_script.tcl
+14:37:39 INFO  : Registering command handlers for Vitis TCF services
+14:37:39 INFO  : Platform repository initialization has completed.
+14:37:40 INFO  : XSCT server has started successfully.
+14:37:40 INFO  : Successfully done setting XSCT server connection channel  
+14:37:40 INFO  : Successfully done query RDI_DATADIR 
+14:37:40 INFO  : Successfully done setting workspace for the tool. 
+14:37:41 INFO  : plnx-install-location is set to ''
+14:38:38 INFO  : Result from executing command 'getProjects': system_wrapper
+14:38:38 INFO  : Result from executing command 'getPlatforms': 
+14:38:38 WARN  : An unexpected exception occurred in the module 'platform project logging'
+14:38:39 INFO  : Platform 'system_wrapper' is added to custom repositories.
+14:38:43 INFO  : Platform 'system_wrapper' is added to custom repositories.
+14:39:01 INFO  : Hardware specification for platform project 'system_wrapper' is updated.
+14:41:58 INFO  : Checking for BSP changes to sync application flags for project 'Mini_ctrl_brd_zynq'...
+14:41:58 INFO  : Result from executing command 'getProjects': Mini_ctrl_brd_zynq;Mini_ctrl_brd_zynq_system;RemoteSystemsTempFiles;system_wrapper
+14:41:58 WARN  : Failed to closehw "D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa"
+Reason: D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+14:41:58 INFO  : Result from executing command 'getProjects': Mini_ctrl_brd_zynq;Mini_ctrl_brd_zynq_system;RemoteSystemsTempFiles;system_wrapper
+14:41:58 ERROR : Failed to openhw "D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa"
+Reason: D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+14:41:58 ERROR : Failed to update application flags from BSP for 'Mini_ctrl_brd_zynq'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+14:49:27 INFO  : Checking for BSP changes to sync application flags for project 'Mini_ctrl_brd_zynq'...
+14:49:27 ERROR : Failed to get platform details for the project 'Mini_ctrl_brd_zynq'. Cannot sync application flags.
+14:49:47 INFO  : Checking for BSP changes to sync application flags for project 'Mini_ctrl_brd_zynq'...
+14:49:47 ERROR : Failed to get platform details for the project 'Mini_ctrl_brd_zynq'. Cannot sync application flags.
+14:54:18 INFO  : Result from executing command 'getProjects': system_wrapper
+14:54:18 INFO  : Result from executing command 'getPlatforms': system_wrapper|D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/system_wrapper.xpfm
+14:54:18 INFO  : Checking for BSP changes to sync application flags for project 'Mini_ctrl_brd_zynq'...
+14:54:18 INFO  : Updating application flags with new BSP settings...
+14:54:18 INFO  : Successfully updated application flags for project Mini_ctrl_brd_zynq.
+14:55:25 INFO  : Checking for BSP changes to sync application flags for project 'Mini_ctrl_brd_zynq'...
+14:55:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:55:45 INFO  : Jtag cable 'Digilent Zed 210248764166' is selected.
+14:55:45 INFO  : 'jtag frequency' command is executed.
+14:55:45 INFO  : Context for 'APU' is selected.
+14:55:46 INFO  : System reset is completed.
+14:55:49 INFO  : 'after 3000' command is executed.
+14:55:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}' command is executed.
+14:55:51 INFO  : Device configured successfully with "D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit"
+14:55:51 INFO  : Context for 'APU' is selected.
+14:55:51 INFO  : Hardware design and registers information is loaded from 'D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+14:55:51 INFO  : 'configparams force-mem-access 1' command is executed.
+14:55:51 INFO  : Context for 'APU' is selected.
+14:55:51 INFO  : Sourcing of 'D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl' is done.
+14:55:51 INFO  : 'ps7_init' command is executed.
+14:55:51 INFO  : 'ps7_post_config' command is executed.
+14:55:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:55:52 INFO  : The application 'D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:55:52 INFO  : 'configparams force-mem-access 0' command is executed.
+14:55:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}
+fpga -file D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:55:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:55:52 INFO  : 'con' command is executed.
+14:55:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:55:52 INFO  : Launch script is exported to file 'D:\ASUS-PC\Desktop\temporary\Vivado2021\Mini_ctrl_brd_zynq\Vitis\Mini_ctrl_brd_zynq_system\_ide\scripts\debugger_mini_ctrl_brd_zynq-default.tcl'
+15:08:18 INFO  : Disconnected from the channel tcfchan#5.
+15:08:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:08:19 INFO  : Jtag cable 'Digilent Zed 210248764166' is selected.
+15:08:19 INFO  : 'jtag frequency' command is executed.
+15:08:21 INFO  : Context for 'APU' is selected.
+15:08:21 INFO  : System reset is completed.
+15:08:24 INFO  : 'after 3000' command is executed.
+15:08:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}' command is executed.
+15:08:26 INFO  : Device configured successfully with "D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit"
+15:08:27 INFO  : Context for 'APU' is selected.
+15:08:27 INFO  : Hardware design and registers information is loaded from 'D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+15:08:27 INFO  : 'configparams force-mem-access 1' command is executed.
+15:08:27 INFO  : Context for 'APU' is selected.
+15:08:27 INFO  : Sourcing of 'D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl' is done.
+15:08:27 INFO  : 'ps7_init' command is executed.
+15:08:27 INFO  : 'ps7_post_config' command is executed.
+15:08:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:08:27 INFO  : The application 'D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:08:27 INFO  : 'configparams force-mem-access 0' command is executed.
+15:08:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}
+fpga -file D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:08:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:08:27 INFO  : 'con' command is executed.
+15:08:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:08:27 INFO  : Launch script is exported to file 'D:\ASUS-PC\Desktop\temporary\Vivado2021\Mini_ctrl_brd_zynq\Vitis\Mini_ctrl_brd_zynq_system\_ide\scripts\debugger_mini_ctrl_brd_zynq-default.tcl'
+15:13:39 INFO  : Checking for BSP changes to sync application flags for project 'Mini_ctrl_brd_zynq'...
+15:13:39 INFO  : Result from executing command 'getProjects': Mini_ctrl_brd_zynq;Mini_ctrl_brd_zynq_system;RemoteSystemsTempFiles;system_wrapper
+15:13:39 WARN  : Failed to closehw "D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa"
+Reason: D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+15:13:39 INFO  : Result from executing command 'getProjects': Mini_ctrl_brd_zynq;Mini_ctrl_brd_zynq_system;RemoteSystemsTempFiles;system_wrapper
+15:13:39 ERROR : Failed to openhw "D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa"
+Reason: D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+15:13:39 ERROR : Failed to update application flags from BSP for 'Mini_ctrl_brd_zynq'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+15:14:10 INFO  : Result from executing command 'removePlatformRepo': 
+15:15:38 INFO  : Hardware specification for platform project 'system_wrapper' is updated.
+15:15:55 INFO  : Checking for BSP changes to sync application flags for project 'Mini_ctrl_brd_zynq'...
+15:15:55 ERROR : Failed to get platform details for the project 'Mini_ctrl_brd_zynq'. Cannot sync application flags.
+15:16:46 INFO  : Hardware specification for platform project 'system_wrapper' is updated.
+15:17:03 INFO  : Checking for BSP changes to sync application flags for project 'Mini_ctrl_brd_zynq'...
+15:17:03 ERROR : Failed to get platform details for the project 'Mini_ctrl_brd_zynq'. Cannot sync application flags.
+15:21:38 INFO  : Result from executing command 'getProjects': system_wrapper
+15:21:38 INFO  : Result from executing command 'getPlatforms': 
+15:21:39 INFO  : Checking for BSP changes to sync application flags for project 'Mini_ctrl_brd_zynq'...
+15:21:39 INFO  : Updating application flags with new BSP settings...
+15:21:39 INFO  : Successfully updated application flags for project Mini_ctrl_brd_zynq.
+15:21:48 INFO  : Disconnected from the channel tcfchan#6.
+15:21:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:49 INFO  : Jtag cable 'Digilent Zed 210248764166' is selected.
+15:21:49 INFO  : 'jtag frequency' command is executed.
+15:21:49 INFO  : Context for 'APU' is selected.
+15:21:50 INFO  : System reset is completed.
+15:21:53 INFO  : 'after 3000' command is executed.
+15:21:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}' command is executed.
+15:21:55 INFO  : Device configured successfully with "D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit"
+15:21:55 INFO  : Context for 'APU' is selected.
+15:21:55 INFO  : Hardware design and registers information is loaded from 'D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+15:21:55 INFO  : 'configparams force-mem-access 1' command is executed.
+15:21:55 INFO  : Context for 'APU' is selected.
+15:21:55 INFO  : Sourcing of 'D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl' is done.
+15:21:55 INFO  : 'ps7_init' command is executed.
+15:21:55 INFO  : 'ps7_post_config' command is executed.
+15:21:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:56 INFO  : The application 'D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:21:56 INFO  : 'configparams force-mem-access 0' command is executed.
+15:21:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}
+fpga -file D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:21:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:56 INFO  : 'con' command is executed.
+15:21:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:21:56 INFO  : Launch script is exported to file 'D:\ASUS-PC\Desktop\temporary\Vivado2021\Mini_ctrl_brd_zynq\Vitis\Mini_ctrl_brd_zynq_system\_ide\scripts\debugger_mini_ctrl_brd_zynq-default.tcl'
+15:25:30 INFO  : Disconnected from the channel tcfchan#13.
+15:25:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:25:31 INFO  : Jtag cable 'Digilent Zed 210248764166' is selected.
+15:25:31 INFO  : 'jtag frequency' command is executed.
+15:25:33 INFO  : Context for 'APU' is selected.
+15:25:34 INFO  : System reset is completed.
+15:25:37 INFO  : 'after 3000' command is executed.
+15:25:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}' command is executed.
+15:25:39 INFO  : Device configured successfully with "D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit"
+15:25:39 INFO  : Context for 'APU' is selected.
+15:25:39 INFO  : Hardware design and registers information is loaded from 'D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa'.
+15:25:39 INFO  : 'configparams force-mem-access 1' command is executed.
+15:25:39 INFO  : Context for 'APU' is selected.
+15:25:39 INFO  : Sourcing of 'D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl' is done.
+15:25:39 INFO  : 'ps7_init' command is executed.
+15:25:39 INFO  : 'ps7_post_config' command is executed.
+15:25:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:40 INFO  : The application 'D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:25:40 INFO  : 'configparams force-mem-access 0' command is executed.
+15:25:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248764166" && level==0 && jtag_device_ctx=="jsn-Zed-210248764166-23727093-0"}
+fpga -file D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/bitstream/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/ASUS-PC/Desktop/temporary/Vivado2021/Mini_ctrl_brd_zynq/Vitis/Mini_ctrl_brd_zynq/Debug/Mini_ctrl_brd_zynq.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:25:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:40 INFO  : 'con' command is executed.
+15:25:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:25:40 INFO  : Launch script is exported to file 'D:\ASUS-PC\Desktop\temporary\Vivado2021\Mini_ctrl_brd_zynq\Vitis\Mini_ctrl_brd_zynq_system\_ide\scripts\debugger_mini_ctrl_brd_zynq-default.tcl'
+15:28:08 INFO  : Disconnected from the channel tcfchan#14.
