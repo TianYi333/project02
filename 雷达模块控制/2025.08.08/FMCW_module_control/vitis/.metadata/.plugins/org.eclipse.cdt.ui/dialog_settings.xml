@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="completion_proposal_size">
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
+		<item key="DIALOG_X_ORIGIN" value="448"/>
+		<item key="DIALOG_Y_ORIGIN" value="373"/>
+		<item key="DIALOG_WIDTH" value="398"/>
+		<item key="DIALOG_HEIGHT" value="490"/>
+		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
+	</section>
+	<section name="PDOMSearchPage">
+		<item key="caseSensitive" value="false"/>
+		<item key="searchFlags" value="227191"/>
+		<list key="previousPatterns">
+			<item value="xemac_add"/>
+			<item value="link_detect_thread"/>
+			<item value="eth_link_detect"/>
+			<item value="Ethernet"/>
+			<item value="EthernetLinkdown"/>
+			<item value="INTERIM_REPORT_INTERVAL"/>
+			<item value="TCP_TIME_INTERVAL"/>
+			<item value="TCP_SEND_BUFSIZE"/>
+			<item value="perf_stats"/>
+			<item value="kLabel"/>
+			<item value="start_application"/>
+			<item value="print_app_header"/>
+			<item value="TCP_CLIENT_THREAD_STACKSIZE"/>
+		</list>
+	</section>
+</section>

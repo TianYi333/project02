@@ -1,0 +1,9 @@
+1，以创建完整通讯协议
+2，在lscript.ld链接脚本定义中添加代码，以创建256MB空间
+ .recv_section (NOLOAD) : {
+        __recv_buffer_start = .;
+        . += 256M;
+        __recv_buffer_end = .;
+    } > DDR
+3，创建256MB储存空间，并且接收成功
+4，在xadapter.c文件中添加FLAG_Link_down标志位，并在的第391行添加代码，在链路断开后断开客户端链接。

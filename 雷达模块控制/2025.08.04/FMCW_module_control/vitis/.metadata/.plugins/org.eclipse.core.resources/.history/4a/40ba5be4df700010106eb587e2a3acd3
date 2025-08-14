@@ -1,0 +1,211 @@
+/*
+ * Copyright (C) 2018 - 2019 Xilinx, Inc.
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ * 3. The name of the author may not be used to endorse or promote products
+ *    derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+ * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+ * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+ * OF SUCH DAMAGE.
+ *
+ */
+/* Connection handle for a TCP Client session */
+
+#include "freertos_tcp_perf_client.h"
+
+int Clientr1_state=0;
+
+void tcp_clientr_1_thread(void *sock_param)
+{
+	int sock = (int)sock_param;
+	char recv_buf[1024];
+	char send_buf[1024];
+	 int recv_len, send_len;
+	while (Clientr1_state==0) {
+		vTaskDelay(1);
+		 recv_len = recv(sock, recv_buf, 1024, 0);
+		 if (recv_len > 0) {
+			 snprintf(send_buf, 1024, "ACK: %d bytes received", recv_len);
+		     send_len = strlen(send_buf);
+		     if (send(sock, send_buf, send_len, 0) != send_len) {
+		    	 xil_printf("[Socket %d] Send failed, closing connection\r\n", sock);
+		    	 break;
+		     }
+		 }
+	}
+	close(sock);
+//	vTaskDelete(NULL);
+}
+
+
+void start_application_client(void)
+{
+
+	char ping_msg[] = "PING";
+	char pong_buf[16];
+	int retry_count = 0;
+	int sockClient;
+	struct sockaddr_in address;
+	/* set up address to connect to */
+
+	while(1)
+	{
+		sockClient = -1;
+		if ((sockClient = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+			xil_printf("TCP Client: Error in creating Socket\r\n");
+			continue;
+		}
+		memset(&address, 0, sizeof(address));
+		address.sin_family = AF_INET;
+		address.sin_port = htons(TCP_CONN_PORT);
+		address.sin_addr.s_addr = inet_addr(TCP_SERVER_IP_ADDRESS);
+		vTaskDelay(5000);
+
+		if (connect(sockClient, (struct sockaddr*)&address, sizeof(address)) < 0) {
+			xil_printf("TCP Client: Error on tcp_connect\r\n");
+			close(sockClient);
+			continue;
+		}
+		 Clientr1_state=0;
+	     /* 连接成功后创建网络数据通信任务 */
+		sys_thread_new("tcp_clientr_1_thread", tcp_clientr_1_thread,
+				(void *)sockClient,
+				1024,
+				DEFAULT_THREAD_PRIO);
+
+		while (1) {
+	        if (send(sockClient, ping_msg, strlen(ping_msg), 0) < 0) {
+	            if (errno == ECONNRESET) {  // 连接被重置
+	                retry_count = 0;
+	                xil_printf("TCP Client: Error on tcp_Disconnect\r\n");
+	                Clientr1_state=1;
+	                close(sockClient);
+	                vTaskDelay(3000);
+                	break;
+	            }
+	        } else {
+	            // 设置接收超时（5秒）
+	            struct timeval tv = {5, 0};
+	            setsockopt(sockClient, SOL_SOCKET, SO_RCVTIMEO, &tv, sizeof(tv));
+	            // 等待响应
+	            if (recv(sockClient, pong_buf, sizeof(pong_buf), 0) <= 0) {
+	                if (++retry_count >= 3) {  // 连续3次超时判定断线
+	                    retry_count = 0;
+	                    xil_printf("TCP Client: Error on tcp_Disconnect\r\n");
+		                Clientr1_state=1;
+	                    close(sockClient);
+		                vTaskDelay(3000);
+	                    break;
+	                }
+	            } else {
+	                retry_count = 0;  // 收到响应则重置计数
+	            }
+	        }
+	        vTaskDelay(5000);  // 每30秒检测一次
+	    }
+	}
+}
+
+void tcp_server_recv_thread(void *p)
+{
+	char recv_buf[1200];
+	int read_bytes;
+	int sock = *((int *)p);
+
+	while (1) {
+		/* read a max of RECV_BUF_SIZE bytes from socket */
+		if ((read_bytes = lwip_recvfrom(sock, recv_buf, 1200,
+						0, NULL, NULL)) < 0)
+		{
+			xil_printf("%s: error reading from socket %d, closing socket\r\n", __FUNCTION__, sock);
+			break;
+		}
+		else
+		{
+			if (!strncmp(recv_buf, "quit", 4))
+				break;
+			xil_printf("TCP test passed Successfully\n\r");
+		}
+
+		/* break if client closed connection */
+		if (read_bytes == 0) {
+			xil_printf("TCP test passed Successfully\n\r");
+			break;
+		}
+	}
+	/* close connection */
+	close(sock);
+	vTaskDelete(NULL);
+}
+
+void start_application_server(void)
+{
+	int sockSrc, new_sd;
+#if LWIP_IPV6==1
+	struct sockaddr_in6 address, remote;
+#else
+	struct sockaddr_in address, remote;
+#endif /* LWIP_IPV6 */
+	int size;
+
+	/* set up address to connect to */
+        memset(&address, 0, sizeof(address));
+#if LWIP_IPV6==1
+	if ((sock = lwip_socket(AF_INET6, SOCK_STREAM, 0)) < 0) {
+		xil_printf("TCP server: Error creating Socket\r\n");
+		return;
+	}
+	address.sin6_family = AF_INET6;
+	address.sin6_port = htons(TCP_CONN_PORT);
+	address.sin6_len = sizeof(address);
+#else
+	if ((sockSrc = lwip_socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+		xil_printf("TCP server: Error creating Socket\r\n");
+		return;
+	}
+	address.sin_family = AF_INET;
+	address.sin_port = htons(5000);
+	address.sin_addr.s_addr = INADDR_ANY;
+#endif /* LWIP_IPV6 */
+
+	if (bind(sockSrc, (struct sockaddr *)&address, sizeof (address)) < 0) {
+		xil_printf("TCP server: Unable to bind to port %d\r\n",
+				TCP_CONN_PORT);
+		close(sockSrc);
+		return;
+	}
+
+	if (listen(sockSrc, 1) < 0) {
+		xil_printf("TCP server: tcp_listen failed\r\n");
+		close(sockSrc);
+		return;
+	}
+
+	size = sizeof(remote);
+
+	while (1) {
+		if ((new_sd = accept(sockSrc, (struct sockaddr *)&remote,
+						(socklen_t *)&size)) > 0)
+		{
+			sys_thread_new("Tcp_server_recv_thread",tcp_server_recv_thread, (void*)&new_sd,
+					1024,
+					DEFAULT_THREAD_PRIO);
+		}
+	}
+}

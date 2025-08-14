@@ -1,0 +1,60 @@
+#ifndef __LWIPOPTS_H__
+#define __LWIPOPTS_H__
+
+/* 使能TCP功能 */
+#define LWIP_TCP 1
+#define TCP_TTL 255
+
+/* 最大TCP连接数 */
+#define MEMP_NUM_TCP_PCB 8
+#define MEMP_NUM_TCP_PCB_LISTEN 8
+#define MEMP_NUM_TCP_SEG 128
+
+/* TCP窗口大小 */
+#define TCP_WND 2048
+#define TCP_MAXRTX 12
+#define TCP_SYNMAXRTX 6
+
+/* IP层配置 */
+#define LWIP_IPV4 1
+#define LWIP_IPV6 0
+#define IP_FORWARD 0
+#define IP_REASSEMBLY 1
+#define IP_FRAG 1
+
+/* ARP配置 */
+#define LWIP_ARP 1
+#define ARP_TABLE_SIZE 10
+#define ARP_QUEUEING 1
+
+/* DHCP配置 */
+#define LWIP_DHCP 0
+
+/* DNS配置 */
+#define LWIP_DNS 0
+
+/* 内存管理配置 */
+#define MEM_ALIGNMENT 4
+#define MEM_SIZE 32768
+#define MEMP_SIZE 16384
+
+/* 调试选项 */
+#define LWIP_DEBUG 0
+#define TCP_DEBUG LWIP_DBG_OFF
+#define IP_DEBUG LWIP_DBG_OFF
+#define ETHARP_DEBUG LWIP_DBG_OFF
+#define PBUF_DEBUG LWIP_DBG_OFF
+
+/* 操作系统相关配置 */
+#define SYS_LIGHTWEIGHT_PROT 1
+#define NO_SYS 0
+#define LWIP_COMPAT_SOCKETS 0
+#define LWIP_SOCKET 0
+
+/* 网络接口配置 */
+#define ETH_PAD_SIZE 2
+#define LWIP_NETIF_HOSTNAME 1
+
+#endif /* __LWIPOPTS_H__ */
+
+

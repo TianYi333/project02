@@ -1,0 +1,1935 @@
+!SESSION 2025-07-29 11:19:34.905 -----------------------------------------------
+eclipse.buildId=2021.1
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\.metadata\.bak_1.log
+Created Time: 2025-08-01 09:19:34.305
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:34.305
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:34.511
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:34.511
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:34.514
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:34.514
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:34.518
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:34.518
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/Debug/FMCW_module_control.elf], Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:35.301
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/Debug/FMCW_module_control.elf], Result: [null, ]. Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:35.302
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:35.332
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:35.389
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:35.401
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:35.401
+!MESSAGE XSCT Command: [con], Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:19:35.446
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-405: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:21:29.686
+!MESSAGE XSCT Command: [disconnect tcfchan#40], Thread: Thread-3855
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:21:29.689
+!MESSAGE XSCT command with result: [disconnect tcfchan#40], Result: [null, ]. Thread: Thread-3855
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:15.034
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-408: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:15.037
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-408: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:15.037
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-408: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:15.040
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-408: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-08-01 09:22:15.040
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:15.041
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-408: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:15.042
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-408: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:35.566
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:22:38.218
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:22:38.221
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:22:38.223
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:22:38.223
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:22:38.223
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:22:38.223
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:22:38.223
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:22:38.224
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:22:38.224
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.260
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#41]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.260
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.488
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.488
+!MESSAGE XSCT Command: [version -server], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.491
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.1]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.491
+!MESSAGE XSCT Command: [version], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.491
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.1
+SW Build 1933 on 2021-06-09-14:19:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.491
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.494
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.494
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.502
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.502
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.506
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.506
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.513
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.513
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.516
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.517
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.524
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.524
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.526
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.526
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.534
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.534
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.537
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.537
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.544
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.544
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.548
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.548
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.555
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.555
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level == 0}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.563
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level == 0}], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.564
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.564
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.565
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.569
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.569
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.634
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:38.634
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:41.641
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:41.668
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:41.686
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:41.686
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:41.695
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:41.695
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-C305AC14ABCD-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:41.715
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-C305AC14ABCD-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:41.715
+!MESSAGE XSCT Command: [fpga -file D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:43.827
+!MESSAGE XSCT command with result: [fpga -file D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:43.844
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:43.848
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:43.850
+!MESSAGE XSCT Command: [loadhw -hw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:43.856
+!MESSAGE XSCT command with result: [loadhw -hw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, system_wrapper_5]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:43.856
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:43.857
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:43.857
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:43.861
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:43.861
+!MESSAGE XSCT Command: [source D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/psinit/ps7_init.tcl], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:43.862
+!MESSAGE XSCT command with result: [source D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:43.862
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:44.081
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:44.081
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:44.107
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:44.108
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:44.123
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:44.124
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/Debug/FMCW_module_control.elf], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:44.869
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/Debug/FMCW_module_control.elf], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:44.869
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:44.901
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:44.970
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:44.983
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:44.984
+!MESSAGE XSCT Command: [con], Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:22:45.023
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-398: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:23:50.568
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-398: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:23:50.572
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-398: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:23:50.572
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-398: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:23:50.574
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-398: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-08-01 09:23:50.574
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:23:50.575
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-398: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:23:50.577
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-398: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:23:59.648
+!MESSAGE XSCT Command: [disconnect tcfchan#41], Thread: Thread-3940
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:23:59.677
+!MESSAGE XSCT command with result: [disconnect tcfchan#41], Result: [null, ]. Thread: Thread-3940
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.687
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.695
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#42]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.695
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.707
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.707
+!MESSAGE XSCT Command: [version -server], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.708
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.1]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.708
+!MESSAGE XSCT Command: [version], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.708
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.1
+SW Build 1933 on 2021-06-09-14:19:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.709
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.711
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.711
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.719
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.720
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.722
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.722
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.730
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.730
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.733
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.733
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.741
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.741
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.744
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.744
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.752
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.752
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.754
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.754
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.762
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.763
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.765
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.765
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.773
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.773
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level == 0}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.781
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level == 0}], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.781
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.782
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.782
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.788
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.788
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.851
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:00.853
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:03.854
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:03.872
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:03.875
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:03.876
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:03.883
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:03.883
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-C305AC14ABCD-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:03.898
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-C305AC14ABCD-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:03.898
+!MESSAGE XSCT Command: [fpga -file D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.000
+!MESSAGE XSCT command with result: [fpga -file D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.026
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.031
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.031
+!MESSAGE XSCT Command: [loadhw -hw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.038
+!MESSAGE XSCT command with result: [loadhw -hw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, system_wrapper_5]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.038
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.039
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.039
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.042
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.042
+!MESSAGE XSCT Command: [source D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/psinit/ps7_init.tcl], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.044
+!MESSAGE XSCT command with result: [source D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.044
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.274
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.274
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.278
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.278
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.282
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:06.282
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/Debug/FMCW_module_control.elf], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:07.042
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/Debug/FMCW_module_control.elf], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:07.042
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:07.071
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:07.138
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:07.150
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:07.150
+!MESSAGE XSCT Command: [con], Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:07.190
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-412: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:33.863
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-410: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:33.866
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-410: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:33.866
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-410: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:33.868
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-410: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-08-01 09:24:33.868
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:33.868
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-410: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:33.869
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-410: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:42.821
+!MESSAGE XSCT Command: [disconnect tcfchan#42], Thread: Thread-4012
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:42.850
+!MESSAGE XSCT command with result: [disconnect tcfchan#42], Result: [null, ]. Thread: Thread-4012
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.844
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.849
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#43]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.849
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.861
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.861
+!MESSAGE XSCT Command: [version -server], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.862
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.1]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.864
+!MESSAGE XSCT Command: [version], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.864
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.1
+SW Build 1933 on 2021-06-09-14:19:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.864
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.867
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.867
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.874
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.874
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.877
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.877
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.885
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.885
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.887
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.888
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.895
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.896
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.898
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.898
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.906
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.906
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.908
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.909
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.916
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.916
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.919
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.919
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.926
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.927
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level == 0}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.935
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level == 0}], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.935
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.935
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.936
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.941
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:43.941
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:44.026
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:44.026
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:47.029
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:47.047
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:47.050
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:47.050
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:47.057
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:47.058
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-C305AC14ABCD-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:47.073
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-C305AC14ABCD-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:47.074
+!MESSAGE XSCT Command: [fpga -file D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.177
+!MESSAGE XSCT command with result: [fpga -file D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.193
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.198
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.199
+!MESSAGE XSCT Command: [loadhw -hw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.204
+!MESSAGE XSCT command with result: [loadhw -hw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, system_wrapper_5]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.205
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.205
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.205
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.210
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.210
+!MESSAGE XSCT Command: [source D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/psinit/ps7_init.tcl], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.211
+!MESSAGE XSCT command with result: [source D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.211
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.423
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.423
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.443
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.443
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.447
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:49.448
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/Debug/FMCW_module_control.elf], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:50.200
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/Debug/FMCW_module_control.elf], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:50.200
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:50.229
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:50.293
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:50.305
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:50.305
+!MESSAGE XSCT Command: [con], Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:24:50.344
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-403: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:33:31.454
+!MESSAGE XSCT Command: [disconnect tcfchan#43], Thread: Thread-4115
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:33:31.457
+!MESSAGE XSCT command with result: [disconnect tcfchan#43], Result: [null, ]. Thread: Thread-4115
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:38:56.507
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-392: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:38:56.511
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-392: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:38:56.512
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-392: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:38:56.513
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-392: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-08-01 09:38:56.513
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:38:56.513
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-392: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:38:56.515
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-392: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:24.862
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:39:27.480
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:39:27.499
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:39:27.499
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:39:27.500
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:39:27.500
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:39:27.500
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:39:27.500
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:39:27.501
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 09:39:27.501
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.520
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#44]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.521
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.748
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.748
+!MESSAGE XSCT Command: [version -server], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.750
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.1]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.750
+!MESSAGE XSCT Command: [version], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.750
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.1
+SW Build 1933 on 2021-06-09-14:19:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.751
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.753
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.753
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.761
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.761
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.765
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.765
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.772
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.773
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.776
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.776
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.783
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.784
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.786
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.786
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.795
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.795
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.798
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.798
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.805
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.806
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.808
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.808
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.816
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.816
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level == 0}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.825
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level == 0}], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.825
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.825
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.826
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.830
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.833
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.898
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:27.898
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:30.899
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:30.912
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:30.916
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:30.916
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:30.923
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:30.924
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-C305AC14ABCD-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:30.943
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-C305AC14ABCD-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:30.943
+!MESSAGE XSCT Command: [fpga -file D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.051
+!MESSAGE XSCT command with result: [fpga -file D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.068
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.073
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.073
+!MESSAGE XSCT Command: [loadhw -hw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.080
+!MESSAGE XSCT command with result: [loadhw -hw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, system_wrapper_5]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.080
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.080
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.081
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.084
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.084
+!MESSAGE XSCT Command: [source D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/psinit/ps7_init.tcl], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.085
+!MESSAGE XSCT command with result: [source D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.086
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.353
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.353
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.357
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.357
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.361
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:33.361
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/Debug/FMCW_module_control.elf], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:34.128
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/Debug/FMCW_module_control.elf], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:34.130
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:34.160
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:34.216
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:34.232
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:34.233
+!MESSAGE XSCT Command: [con], Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 09:39:34.271
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-411: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 13:47:29.524
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 13:47:29.579
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 13:47:29.609
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 13:47:29.609
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 13:47:29.610
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 13:47:29.610
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 13:47:29.610
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 13:47:29.610
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 13:47:29.611
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 13:48:49.997
+!MESSAGE XSCT Command: [disconnect tcfchan#44], Thread: Thread-4303
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 13:48:50.005
+!MESSAGE XSCT command with result: [disconnect tcfchan#44], Result: [null, ]. Thread: Thread-4303
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:10.799
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 14:43:13.549
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 14:43:13.585
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 14:43:13.586
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 14:43:13.586
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 14:43:13.587
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 14:43:13.588
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 14:43:13.588
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 14:43:13.588
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2025-08-01 14:43:13.589
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.596
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#45]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.597
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.847
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.847
+!MESSAGE XSCT Command: [version -server], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.849
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2021.1]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.850
+!MESSAGE XSCT Command: [version], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.850
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2021.1
+SW Build 1933 on 2021-06-09-14:19:58
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.851
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.853
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.853
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.861
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.863
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.865
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.865
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.873
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.874
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.877
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.877
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.885
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.886
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.890
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.890
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.898
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.899
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.901
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.902
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.909
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.910
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.913
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.913
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.922
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.922
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level == 0}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.930
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level == 0}], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.930
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.931
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.931
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.936
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:13.936
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:14.010
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:14.010
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:17.013
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:17.029
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:17.032
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent JTAG-SMT2 C305AC14ABCD]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:17.032
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:17.040
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:17.040
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-C305AC14ABCD-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:17.074
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 C305AC14ABCD" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-C305AC14ABCD-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:17.074
+!MESSAGE XSCT Command: [fpga -file D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/bitstream/system_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.172
+!MESSAGE XSCT command with result: [fpga -file D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/bitstream/system_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.189
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.196
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.197
+!MESSAGE XSCT Command: [loadhw -hw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.214
+!MESSAGE XSCT command with result: [loadhw -hw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, system_wrapper_5]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.215
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.215
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.216
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.220
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.220
+!MESSAGE XSCT Command: [source D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/psinit/ps7_init.tcl], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.222
+!MESSAGE XSCT command with result: [source D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.223
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.493
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.493
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.497
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.497
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.502
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:19.502
+!MESSAGE XSCT Command: [dow D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/Debug/FMCW_module_control.elf], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:20.233
+!MESSAGE XSCT command with result: [dow D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/FMCW_module_control/Debug/FMCW_module_control.elf], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:20.233
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:20.286
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:20.346
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:20.361
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:20.361
+!MESSAGE XSCT Command: [con], Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:43:20.412
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-482: Launching Debugger_FMCW_module_control-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:44:53.762
+!MESSAGE XSCT Command: [disconnect tcfchan#45], Thread: Thread-4400
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:44:53.766
+!MESSAGE XSCT command with result: [disconnect tcfchan#45], Result: [null, ]. Thread: Thread-4400
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:46:15.428
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-486: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:46:15.450
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-486: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:46:15.451
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-486: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:46:15.460
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-486: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-08-01 14:46:15.460
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:46:15.461
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-486: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:46:15.463
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-486: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-08-01 14:46:18.183
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:46:42.832
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-475: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:46:42.835
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-475: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:46:42.835
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-475: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:46:42.837
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-475: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-08-01 14:46:42.838
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:46:42.838
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-475: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:46:42.839
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-475: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-08-01 14:46:45.453
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:47:05.416
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-477: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:47:05.419
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-477: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:47:05.419
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-477: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:47:05.423
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-477: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-08-01 14:47:05.423
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:47:05.423
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-477: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 14:47:05.424
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-477: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:31:58.755
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:31:58.759
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:31:58.760
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:31:58.762
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-08-01 15:31:58.762
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:31:58.764
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:31:58.764
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-08-01 15:32:02.980
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:33:01.605
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:33:01.609
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:33:01.609
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:33:01.610
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-08-01 15:33:01.610
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:33:01.611
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:33:01.611
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-08-01 15:33:04.118
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:34:42.487
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-498: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:34:42.490
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-498: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:34:42.491
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-498: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:34:42.492
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-498: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-08-01 15:34:42.492
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:34:42.493
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-498: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:34:42.494
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-498: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-08-01 15:34:49.092
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:00.600
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:00.604
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:00.604
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:00.606
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-08-01 15:36:00.606
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:00.607
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:00.607
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-415: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-08-01 15:36:02.866
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:14.263
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-496: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:14.268
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-496: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:14.268
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-496: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:14.270
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-496: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-08-01 15:36:14.270
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:14.270
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-496: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:14.271
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-496: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2025-08-01 15:36:16.795
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:22.255
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Thread: Worker-498: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:22.258
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-498: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:22.258
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-498: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:22.260
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "freertos10_xilinx",
+"osver": "1.9",
+}]. Thread: Worker-498: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-08-01 15:36:22.260
+!MESSAGE Generating MD5 hash for file: D:\ASUS-PC\Desktop\temporary\FMCW_module_control\vitis\system_wrapper\export\system_wrapper\sw\system_wrapper\freertos10_xilinx_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:22.260
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Thread: Worker-498: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-08-01 15:36:22.261
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-498: Build Project

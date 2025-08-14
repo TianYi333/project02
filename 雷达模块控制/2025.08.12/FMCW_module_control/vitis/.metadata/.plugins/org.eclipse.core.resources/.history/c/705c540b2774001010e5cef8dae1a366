@@ -1,0 +1,443 @@
+#include "freertos_tcp_perf_client.h"
+
+int Clientr1_state=0;
+int Clientr2_state=0;
+uint8_t count_client1=0,count_client2=0;
+
+void start_application_client1();
+void start_application_client2();
+void start_application_server();
+
+// 提取标志字符串后到分隔符前的内容
+char *extract_after_marker_safe(const char *str, const char *marker, char delimiter) {
+    if (!str || !marker) return NULL;
+
+    char *start = strstr(str, marker);
+    if (!start) return NULL;
+
+    start += strlen(marker);
+
+    // 处理空字符串情况
+    if (*start == '\0') return NULL;
+
+    char *end = strchr(start, delimiter);
+
+    if (!end) {
+        return strdup(start);
+    } else {
+        // 检查长度是否有效
+        if (end <= start) return NULL;
+
+        size_t len = end - start;
+        char *result = malloc(len + 1);
+        if (!result) return NULL;
+
+        strncpy(result, start, len);
+        result[len] = '\0';
+        return result;
+    }
+}
+
+void query_command_list(int sock) //查询命令
+{
+    const char *commands[] = {
+        "*idn?\r\n",
+        ":FMCW:FREQuency:STARt?\r\n",
+        ":FMCW:FREQuency:STOP?\r\n",
+        ":FMCW:STEP:TIME?\r\n",
+		":FMCW:POWER?\r\n",
+		":FMCW:LO:SCAN:TIME?\r\n",
+		":FMCW:BW?\r\n",
+		":FMCW:IF?\r\n",
+        ":FMCW:TRIG:MODE?\r\n",
+        ":FMCW:TRIG:COUNt?\r\n",
+        ":FMCW:RUN:MODE?\r\n",
+        ":FMCW:FRAME:TIME?\r\n",
+		":FMCW:POWER:MODE?\r\n",
+		":FMCW:RFSTATe?\r\n",
+		":FMCW:FMCOUNT?\r\n",
+		":FMCW:MICRowave:MODE?\r\n",
+		":FMCW:MICRowave:DATA?\r\n",
+		":FMCW:SD:ACTive?\r\n",
+		":FMCW:FLAG?\r\n"
+    };
+    int num_commands = sizeof(commands) / sizeof(commands[0]);
+    xil_printf("Sending query command list...\n");
+    for (int i = 0; i < num_commands; i++) {
+    	xil_printf("-> %s", commands[i]);
+        send(sock, commands[i], strlen(commands[i]), 0);
+        vTaskDelay(10); // 10ms delay between commands
+    }
+}
+
+void set_up_command_list(int sock) //设置命令
+{
+    const char *commands[] = {
+    	":FMCW:FLAG?\r\n"
+        ":FMCW:FREQuency:STARt 9000000000\r\n",
+        ":FMCW:FREQuency:STOP 9500000000\r\n",
+        ":FMCW:STEP:TIME 200\r\n",
+        ":FMCW:POWER 10\r\n",
+		":FMCW:LO:SCAN:TIME 400\r\n",
+		":FMCW:BW 16000000\r\n",
+		":FMCW:IF 10\r\n",
+		":FMCW:TRIG:MODE SOFT\r\n",
+		":FMCW:TRIG:COUNt 1\r\n",
+        ":FMCW:RUN:MODE MODEA\r\n",
+        ":FMCW:POWER:MODE WAIT\r\n",
+        ":FMCW:RFSTATe OFF\r\n",
+        ":FMCW:PACKage:LENGth 1024\r\n",
+		":FMCW:FMCOUNT 1\r\n",
+		":FMCW:MICRowave:MODE 0\r\n",
+		":FMCW:MICRowave:DATA 0\r\n",
+		":FMCW:INIT\r\n"
+    };
+    int num_commands = sizeof(commands) / sizeof(commands[0]);
+    xil_printf("Sending set up command list...\n");
+    for (int i = 0; i < num_commands; i++) {
+    	xil_printf("-> %s", commands[i]);
+        send(sock, commands[i], strlen(commands[i]), 0);
+        vTaskDelay(10); // 10ms delay between commands
+    }
+}
+
+void tcp_clientr2_recv_thread(void *sock_param)
+{
+	int sock = (int)sock_param;
+	char recv_buf[1024];
+	char send_buf[1024];
+	 int recv_len, send_len;
+	 xil_printf("Client2与服务器重连成功\r\n");
+	while (Clientr2_state==0) {
+		vTaskDelay(1);
+		 recv_len = recv(sock, recv_buf, 1024, 0);
+		 if (recv_len > 0)
+		 {
+			 snprintf(send_buf, 1024, "ACK: %d bytes received", recv_len);
+		     send_len = strlen(send_buf);
+		     if (send(sock, send_buf, send_len, 0) != send_len)
+		     {
+		    	 xil_printf("[Socket %d] Send failed, closing connection\r\n", sock);
+		    	 Clientr2_state=2;
+		    	 break;
+		     }
+		     count_client2=0;
+		 }
+	}
+	xil_printf("Client2与服务器断连，关闭任务\r\n");
+	close(sock);
+	vTaskDelete(NULL);
+}
+
+void start_application_client2(void)
+{
+
+	char ping_msg[] = "PING2";
+//	char pong_buf[16];
+//	int retry_count = 0;
+	int sockClient2;
+	struct sockaddr_in address;
+	/* set up address to connect to */
+
+	while(1)
+	{
+		sockClient2 = -1;
+		if ((sockClient2 = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+			xil_printf("TCP Client_2: Error in creating Socket\r\n");
+			continue;
+		}
+		memset(&address, 0, sizeof(address));
+		address.sin_family = AF_INET;
+		address.sin_port = htons(TCP_Client_CONN_PORT2);
+		address.sin_addr.s_addr = inet_addr(TCP_SERVER_IP_ADDRESS);
+		vTaskDelay(1000);//延时等待1s
+
+		if (connect(sockClient2, (struct sockaddr*)&address, sizeof(address)) < 0) {
+			xil_printf("TCP Client_2: Error on tcp_connect\r\n");
+			close(sockClient2);
+			continue;
+		}
+		 Clientr2_state=0;
+	     /* 连接成功后创建网络数据通信任务 */
+		sys_thread_new("tcp_clientr2_recv_thread", tcp_clientr2_recv_thread,
+				(void *)sockClient2,
+				TCP_CLIENT_THREAD_STACKSIZE,
+				DEFAULT_THREAD_PRIO);
+
+		while (1) {
+			if(count_client2<5)
+			{
+				count_client2++;
+				vTaskDelay(1000);
+			}
+			else
+			{
+				count_client2=0;
+				xil_printf("Client2_5s心跳检测\r\n");
+				if (send(sockClient2, ping_msg, strlen(ping_msg), 0) < 0) {
+					if (errno == ECONNRESET) {  // 连接被重置
+						xil_printf("TCP Client_2: Error on tcp_Disconnect\r\n");
+						Clientr2_state=1;
+						close(sockClient2);
+						break;
+					}
+				}
+			}
+	        if(Clientr2_state==2)
+	        {
+	        	close(sockClient2);
+	        	break;
+	        }
+	    }
+	}
+}
+
+void tcp_clientr1_send_thread(void *sock_param)
+{
+	int sock = (int)sock_param;
+	char* send_buf=(char*)malloc(100); // 动态分配内存;
+	const char* start_commands=":FMCW:LAN:GATHer:BEGin\r\n";
+	while (Clientr1_state==0) {
+		if(xQueueReceive(Lwip_Clientr1_Send_Queue,send_buf,100))
+		{
+			set_up_command_list(sock);//发送设置命令
+			 if(send(sock, send_buf, strlen(send_buf), 0)<0)
+			 {
+				 xil_printf("[Socket %d] Recv failed, closing connection\r\n", sock);
+				 Clientr1_state=2;
+				 break;
+			 }
+			 if(send(sock, start_commands, strlen(start_commands), 0)<0)
+			 {
+				 xil_printf("[Socket %d] Recv failed, closing connection\r\n", sock);
+				 Clientr1_state=2;
+				 break;
+			 }
+			 free(send_buf);// 使用完后，必须调用 free 释放内存！
+		}
+	}
+	xil_printf("Client1与服务器断连，关闭任务\r\n");
+	close(sock);
+	vTaskDelete(NULL);
+}
+
+void tcp_clientr1_recv_thread(void *sock_param)
+{
+	int sock = (int)sock_param;
+	char clientr1_recv_buf[100];
+	char clientr1_recv_data[100];
+	int recv_len;
+	xil_printf("Client1与服务器重连成功\r\n");
+	while (Clientr1_state==0) {
+		recv_len = recv(sock, clientr1_recv_buf, 100, 0);
+		if (recv_len > 0)
+		{
+			count_client1=0;
+			memcpy(clientr1_recv_data, clientr1_recv_buf, recv_len);
+			xQueueSendFromISR(Lwip_Clientr1_Recv_Queue,clientr1_recv_data,0);
+			memset(clientr1_recv_data, 0, recv_len);
+		}
+		else
+		{
+			 xil_printf("[Socket %d] Recv failed, closing connection\r\n", sock);
+			Clientr1_state=2;
+			break;
+		}
+		vTaskDelay(1);
+	}
+	xil_printf("Client1与服务器断连，关闭任务\r\n");
+	close(sock);
+	vTaskDelete(NULL);
+}
+
+void start_application_client1(void)
+{
+
+	char ping_msg[] = "PING1";
+//	char pong_buf[16];
+//	int retry_count = 0;
+	int sockClient1;
+	struct sockaddr_in address;
+	/* set up address to connect to */
+
+	while(1)
+	{
+		sockClient1 = -1;
+		if ((sockClient1 = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+			xil_printf("TCP Client_1: Error in creating Socket\r\n");
+			continue;
+		}
+		memset(&address, 0, sizeof(address));
+		address.sin_family = AF_INET;
+		address.sin_port = htons(TCP_Client_CONN_PORT1);
+		address.sin_addr.s_addr = inet_addr(TCP_SERVER_IP_ADDRESS);
+		vTaskDelay(1000);//延时等待1s
+
+		if (connect(sockClient1, (struct sockaddr*)&address, sizeof(address)) < 0) {
+			xil_printf("TCP Client_1: Error on tcp_connect\r\n");
+			close(sockClient1);
+			continue;
+		}
+		 Clientr1_state=0;
+	     /* 连接成功后创建网络数据通信任务 */
+		sys_thread_new("tcp_clientr1_recv_thread", tcp_clientr1_recv_thread,
+				(void *)sockClient1,
+				TCP_CLIENT_THREAD_STACKSIZE,
+				DEFAULT_THREAD_PRIO);
+
+		sys_thread_new("tcp_clientr1_send_thread", tcp_clientr1_send_thread,
+				(void *)sockClient1,
+				TCP_CLIENT_THREAD_STACKSIZE,
+				DEFAULT_THREAD_PRIO);
+
+		vTaskDelay(10);//延时等待1s
+		query_command_list(sockClient1);//发送查询命令
+		while (1) {
+			if(count_client1<5)
+			{
+				count_client1++;
+				vTaskDelay(1000);
+			}
+			else
+			{
+				count_client1=0;
+				xil_printf("Client1_5s心跳检测\r\n");
+				if (send(sockClient1, ping_msg, strlen(ping_msg), 0) < 0) {
+					if (errno == ECONNRESET) {  // 连接被重置
+//	    	            retry_count = 0;
+						xil_printf("TCP Client_1: Error on tcp_Disconnect\r\n");
+						Clientr1_state=1;
+						close(sockClient1);
+						break;
+					}
+				}
+			}
+	        if(Clientr1_state==2)
+	        {
+	        	close(sockClient1);
+	        	break;
+	        }
+	    }
+	}
+}
+
+void TCP_server_send_perf_thread(void *p)
+{
+	int write_bytes;
+	int sock = *((int *)p);
+	u8 Lwip_send_buf[2048]={0};
+    u8 *tx_packet;
+    u32 Data_bytes;
+	while (1) {
+		if(xQueueReceive(Lwip_Server_Send_Queue,Lwip_send_buf,100))/* 从队列接收消息成功 */
+		{
+			Data_bytes=Lwip_send_buf[0]<<24|Lwip_send_buf[1]<<16|Lwip_send_buf[2]<<8|Lwip_send_buf[3];
+			tx_packet=&Lwip_send_buf[4];
+			if ((write_bytes = write(sock, tx_packet, Data_bytes)) < 0) {
+				xil_printf("Closing socket %d\r\n", sock);
+				break;
+			}
+		}
+	}
+	close(sock);
+	vTaskDelete(NULL);
+}
+
+void Tcp_server_recv_thread(void *p)
+{
+	char recv_buf[1200];
+	int read_bytes;
+	int sock = *((int *)p);
+	u8 Lwip_recv_buf[36]={0};
+
+	while (1) {
+		/* read a max of RECV_BUF_SIZE bytes from socket */
+		if ((read_bytes = lwip_recvfrom(sock, recv_buf, 1200,
+						0, NULL, NULL)) < 0)
+		{
+			xil_printf("%s: error reading from socket %d, closing socket\r\n", __FUNCTION__, sock);
+			break;
+		}
+		else
+		{
+			if (!strncmp(recv_buf, "quit", 4))
+				break;
+			xil_printf("TCP test passed Successfully\n\r");
+			Lwip_recv_buf[0]=(read_bytes>>24)&0xff;//数组0位为接收数据数
+			Lwip_recv_buf[1]=(read_bytes>>16)&0xff;//数组1位为接收数据数
+			Lwip_recv_buf[2]=(read_bytes>>8)&0xff;//数组2位为接收数据数
+			Lwip_recv_buf[3]=read_bytes&0xff;//数组3位为接收数据数
+			memcpy(&Lwip_recv_buf[4], recv_buf, read_bytes);
+			xQueueSendFromISR(Lwip_Server_Send_Queue,Lwip_recv_buf,0);
+			memset(Lwip_recv_buf, 0, read_bytes+4);
+		}
+
+		/* break if client closed connection */
+		if (read_bytes == 0) {
+			xil_printf("TCP test passed Successfully\n\r");
+			break;
+		}
+	}
+	/* close connection */
+	close(sock);
+	vTaskDelete(NULL);
+}
+
+void start_application_server(void)
+{
+	int sockSrc, new_sd;
+#if LWIP_IPV6==1
+	struct sockaddr_in6 address, remote;
+#else
+	struct sockaddr_in address, remote;
+#endif /* LWIP_IPV6 */
+	int size;
+
+	/* set up address to connect to */
+        memset(&address, 0, sizeof(address));
+#if LWIP_IPV6==1
+	if ((sock = lwip_socket(AF_INET6, SOCK_STREAM, 0)) < 0) {
+		xil_printf("TCP server: Error creating Socket\r\n");
+		return;
+	}
+	address.sin6_family = AF_INET6;
+	address.sin6_port = htons(TCP_CONN_PORT);
+	address.sin6_len = sizeof(address);
+#else
+	if ((sockSrc = lwip_socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+		xil_printf("TCP server: Error creating Socket\r\n");
+		return;
+	}
+	address.sin_family = AF_INET;
+	address.sin_port = htons(TCP_Server_CONN_PORT2);
+	address.sin_addr.s_addr = INADDR_ANY;
+#endif /* LWIP_IPV6 */
+
+	if (bind(sockSrc, (struct sockaddr *)&address, sizeof (address)) < 0) {
+		xil_printf("TCP server: Unable to bind to port %d\r\n",
+				TCP_Server_CONN_PORT2);
+		close(sockSrc);
+		return;
+	}
+
+	if (listen(sockSrc, 1) < 0) {
+		xil_printf("TCP server: tcp_listen failed\r\n");
+		close(sockSrc);
+		return;
+	}
+
+	size = sizeof(remote);
+
+	while (1) {
+		if ((new_sd = accept(sockSrc, (struct sockaddr *)&remote,
+						(socklen_t *)&size)) > 0)
+		{
+			sys_thread_new("Tcp_server_recv_thread",Tcp_server_recv_thread, (void*)&new_sd,
+					TCP_CLIENT_THREAD_STACKSIZE,
+					DEFAULT_THREAD_PRIO);
+			sys_thread_new("TCP_server_send_perf thread",TCP_server_send_perf_thread, (void*)&new_sd,
+					TCP_CLIENT_THREAD_STACKSIZE,
+					DEFAULT_THREAD_PRIO-1);
+		}
+	}
+}

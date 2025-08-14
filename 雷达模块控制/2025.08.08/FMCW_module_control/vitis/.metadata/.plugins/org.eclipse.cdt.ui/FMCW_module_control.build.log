@@ -1,0 +1,10 @@
+18:05:07 **** Incremental Build of configuration Debug for project FMCW_module_control ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.
+
+18:05:08 Build Finished (took 843ms)
+

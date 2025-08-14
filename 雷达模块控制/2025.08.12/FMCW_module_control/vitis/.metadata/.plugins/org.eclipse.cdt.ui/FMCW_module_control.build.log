@@ -1,0 +1,25 @@
+09:53:11 **** Incremental Build of configuration Debug for project FMCW_module_control ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/freertos_tcp_perf_client.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_tcp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/freertos_tcp_perf_client.d" -MT"src/freertos_tcp_perf_client.o" -o "src/freertos_tcp_perf_client.o" "../src/freertos_tcp_perf_client.c"
+'Finished building: ../src/freertos_tcp_perf_client.c'
+' '
+'Building target: FMCW_module_control.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/ASUS-PC/Desktop/temporary/FMCW_module_control/vitis/system_wrapper/export/system_wrapper/sw/system_wrapper/freertos10_xilinx_ps7_cortexa9_0/bsplib/lib -o "FMCW_module_control.elf"  ./src/freertos_tcp_perf_client.o ./src/iic_phyreset.o ./src/main.o ./src/md5.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: FMCW_module_control.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FMCW_module_control.elf  |tee "FMCW_module_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 205382	   3400	390207552	390416334	174547ce	FMCW_module_control.elf
+'Finished building: FMCW_module_control.elf.size'
+' '
+
+09:53:14 Build Finished (took 3s.457ms)
+

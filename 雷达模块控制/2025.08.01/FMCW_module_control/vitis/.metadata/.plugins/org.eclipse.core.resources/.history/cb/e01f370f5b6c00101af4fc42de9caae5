@@ -1,0 +1,216 @@
+#include "xemacpsif.h"
+#include "xparameters.h"
+#include "xemacps.h"
+#include "xtime_l.h"
+#include "xil_printf.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+
+/* 以太网帧最大长度 */
+#define ETH_MAX_FRAME_SIZE 1536
+
+/* 网络接口实例 */
+struct netif xemacpsif_netif;
+
+/* XEmacPs设备实例 */
+static XEmacPs EmacPsInstance;
+static u8 EmacPsRxBuffer[ETH_MAX_FRAME_SIZE] __attribute__ ((aligned (32)));
+static TaskHandle_t xNetworkTaskHandle;
+static QueueHandle_t xNetworkEventQueue;
+
+/* 网络事件类型 */
+typedef enum {
+    NETWORK_EVENT_RX,
+    NETWORK_EVENT_TX,
+    NETWORK_EVENT_ERROR
+} NetworkEventType;
+
+/* 网络事件结构体 */
+typedef struct {
+    NetworkEventType EventType;
+    u32 Data;
+} NetworkEvent_t;
+
+/* 中断处理函数 */
+static void EmacPsHandler(void *CallBackRef, u32 StatusEvent, u32 BufferPtr) {
+    BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+    NetworkEvent_t Event;
+
+    switch (StatusEvent) {
+        case XEMACPS_EVENT_RECV_DATA:
+            Event.EventType = NETWORK_EVENT_RX;
+            xQueueSendFromISR(xNetworkEventQueue, &Event, &xHigherPriorityTaskWoken);
+            break;
+
+        case XEMACPS_EVENT_SEND_DATA:
+            Event.EventType = NETWORK_EVENT_TX;
+            xQueueSendFromISR(xNetworkEventQueue, &Event, &xHigherPriorityTaskWoken);
+            break;
+
+        default:
+            Event.EventType = NETWORK_EVENT_ERROR;
+            Event.Data = StatusEvent;
+            xQueueSendFromISR(xNetworkEventQueue, &Event, &xHigherPriorityTaskWoken);
+            break;
+    }
+
+    portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+}
+
+/* 发送数据包 */
+static err_t ethernetif_output(struct netif *netif, struct pbuf *p) {
+    struct pbuf *q;
+    int TotalLength = 0;
+    u8 *BufferPtr;
+    u32 FrameLength;
+    int Result;
+
+    /* 计算总长度 */
+    for (q = p; q != NULL; q = q->next) {
+        TotalLength += q->len;
+    }
+
+    /* 分配发送缓冲区 */
+    BufferPtr = (u8 *)pvPortMalloc(TotalLength);
+    if (BufferPtr == NULL) {
+        return ERR_MEM;
+    }
+
+    /* 复制数据到发送缓冲区 */
+    TotalLength = 0;
+    for (q = p; q != NULL; q = q->next) {
+        memcpy(BufferPtr + TotalLength, q->payload, q->len);
+        TotalLength += q->len;
+    }
+
+    /* 发送数据包 */
+    FrameLength = TotalLength;
+    Result = XEmacPs_Send(&EmacPsInstance, BufferPtr, FrameLength);
+
+    /* 释放发送缓冲区 */
+    vPortFree(BufferPtr);
+
+    if (Result != XST_SUCCESS) {
+        return ERR_USE;
+    }
+
+    return ERR_OK;
+}
+
+/* 网络输入任务 */
+static void vNetworkTask(void *pvParameters) {
+    NetworkEvent_t Event;
+    u32 FrameLength;
+    struct pbuf *p;
+    struct netif *netif = &xemacpsif_netif;
+
+    for (;;) {
+        /* 等待网络事件 */
+        if (xQueueReceive(xNetworkEventQueue, &Event, portMAX_DELAY) == pdTRUE) {
+            switch (Event.EventType) {
+                case NETWORK_EVENT_RX:
+                    /* 接收数据包 */
+                    while ((FrameLength = XEmacPs_Recv(&EmacPsInstance, EmacPsRxBuffer, ETH_MAX_FRAME_SIZE)) > 0) {
+                        /* 创建pbuf */
+                        p = pbuf_alloc(PBUF_RAW, FrameLength, PBUF_POOL);
+                        if (p != NULL) {
+                            /* 复制数据到pbuf */
+                            pbuf_take(p, EmacPsRxBuffer, FrameLength);
+                            /* 将数据包传递给lwIP */
+                            netif_input(p, netif);
+                        }
+                    }
+                    break;
+
+                case NETWORK_EVENT_TX:
+                    /* 发送完成，无需特别处理 */
+                    break;
+
+                case NETWORK_EVENT_ERROR:
+                    xil_printf("网络错误: 0x%08X\n", Event.Data);
+                    break;
+            }
+        }
+    }
+}
+
+/* 网络接口初始化 */
+err_t ethernetif_init(struct netif *netif) {
+    netif->name[0] = 'e';
+    netif->name[1] = '0';
+    netif->output = etharp_output;
+    netif->linkoutput = ethernetif_output;
+    netif->mtu = 1500;
+    netif->flags = NETIF_FLAG_BROADCAST | NETIF_FLAG_ETHARP | NETIF_FLAG_LINK_UP;
+
+    return ERR_OK;
+}
+
+/* 网络输入处理 */
+void xemacpsif_input(void *p) {
+    struct netif *netif = (struct netif *)p;
+    u32 FrameLength;
+    struct pbuf *q;
+
+    while ((FrameLength = XEmacPs_Recv(&EmacPsInstance, EmacPsRxBuffer, ETH_MAX_FRAME_SIZE)) > 0) {
+        q = pbuf_alloc(PBUF_RAW, FrameLength, PBUF_POOL);
+        if (q != NULL) {
+            pbuf_take(q, EmacPsRxBuffer, FrameLength);
+            netif_input(q, netif);
+        }
+    }
+}
+
+/* 初始化以太网接口 */
+void xemacpsif_init(void) {
+    XEmacPs_Config *ConfigPtr;
+    int Status;
+
+    /* 获取设备配置 */
+    ConfigPtr = XEmacPs_LookupConfig(XPAR_XEMACPS_0_DEVICE_ID);
+    if (ConfigPtr == NULL) {
+        xil_printf("错误: 无法查找以太网设备配置\n");
+        return;
+    }
+
+    /* 初始化设备 */
+    Status = XEmacPs_CfgInitialize(&EmacPsInstance, ConfigPtr, ConfigPtr->BaseAddress);
+    if (Status != XST_SUCCESS) {
+        xil_printf("错误: 以太网设备初始化失败\n");
+        return;
+    }
+
+    /* 设置MAC地址 */
+    u8 MacAddress[6] = {0x00, 0x0A, 0x35, 0x01, 0x02, 0x03};
+    XEmacPs_SetMacAddress(&EmacPsInstance, MacAddress);
+
+    /* 设置接收帧过滤 */
+    u32 FrameFilter = XEMACPS_FRAMEFILTER_PROMISC_MASK |
+                      XEMACPS_FRAMEFILTER_MULTICAST_MASK |
+                      XEMACPS_FRAMEFILTER_BROADCAST_MASK;
+    XEmacPs_SetFrameFilter(&EmacPsInstance, FrameFilter);
+
+    /* 设置中断处理函数 */
+    XEmacPs_SetHandler(&EmacPsInstance, (XEmacPs_Handler)EmacPsHandler, &EmacPsInstance);
+
+    /* 创建网络事件队列 */
+    xNetworkEventQueue = xQueueCreate(10, sizeof(NetworkEvent_t));
+    if (xNetworkEventQueue == NULL) {
+        xil_printf("错误: 创建网络事件队列失败\n");
+        return;
+    }
+
+    /* 创建网络任务 */
+    xTaskCreate(vNetworkTask, "Network", 1024, NULL, 3, &xNetworkTaskHandle);
+    if (xNetworkTaskHandle == NULL) {
+        xil_printf("错误: 创建网络任务失败\n");
+        return;
+    }
+
+    /* 启用中断 */
+    XEmacPs_IntrEnable(&EmacPsInstance, XEMACPS_IXR_RXF_MASK | XEMACPS_IXR_TXF_MASK);
+}
+
+

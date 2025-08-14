@@ -1,0 +1,19 @@
+#ifndef SRC_MAIN_H_
+#define SRC_MAIN_H_
+
+#include <unistd.h>
+#include "netif/xadapter.h"
+#include "platform_config.h"
+#include "xil_printf.h"
+#include "lwip/init.h"
+#include "lwip/inet.h"
+#include "lwip/dhcp.h"
+#define THREAD_STACKSIZE 1024
+
+
+
+
+
+
+
+#endif /* SRC_MAIN_H_ */

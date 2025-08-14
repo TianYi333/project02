@@ -1,0 +1,351 @@
+#include "FreeRTOS.h"
+#include "task.h"
+#include "semphr.h"
+#include "lwip/tcp.h"
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "platform.h"
+#include "xemacpsif.h"
+#include "xil_exception.h"
+#include "xtime_l.h"
+
+// 服务器配置
+#define SERVER_IP1 "192.168.1.100"
+#define SERVER_PORT1 5000
+#define SERVER_IP2 "192.168.1.100"
+#define SERVER_PORT2 5001
+
+// 任务栈大小和优先级
+#define TASK_STACK_SIZE 2048
+#define TASK_PRIORITY 2
+
+// 全局变量
+static struct tcp_pcb *tcp_pcb1 = NULL;
+static struct tcp_pcb *tcp_pcb2 = NULL;
+static SemaphoreHandle_t connection_semaphore1 = NULL;
+static SemaphoreHandle_t connection_semaphore2 = NULL;
+static uint8_t is_connected1 = 0;
+static uint8_t is_connected2 = 0;
+
+// 函数声明
+static void Task_TCP_Client1(void *pvParameters);
+static void Task_TCP_Client2(void *pvParameters);
+static err_t tcp_client1_connected(void *arg, struct tcp_pcb *tpcb, err_t err);
+static err_t tcp_client1_received(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err);
+static void tcp_client1_error(void *arg, err_t err);
+static err_t tcp_client2_connected(void *arg, struct tcp_pcb *tpcb, err_t err);
+static err_t tcp_client2_received(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err);
+static void tcp_client2_error(void *arg, err_t err);
+static void SystemInit(void);
+static void LwIPInit(void);
+
+int main(void) {
+    SystemInit();
+    LwIPInit();
+
+    // 创建信号量
+    connection_semaphore1 = xSemaphoreCreateBinary();
+    connection_semaphore2 = xSemaphoreCreateBinary();
+
+    // 创建任务
+    xTaskCreate(Task_TCP_Client1, "Client1", TASK_STACK_SIZE, NULL, TASK_PRIORITY, NULL);
+    xTaskCreate(Task_TCP_Client2, "Client2", TASK_STACK_SIZE, NULL, TASK_PRIORITY, NULL);
+
+    // 启动调度器
+    vTaskStartScheduler();
+
+    // 如果程序执行到这里，说明发生了错误
+    while(1);
+}
+
+static void Task_TCP_Client1(void *pvParameters) {
+    ip_addr_t server_ip;
+    err_t err;
+
+    // 解析服务器IP地址
+    IP4_ADDR(&server_ip, 192, 168, 1, 100);
+
+    while(1) {
+        // 创建新的TCP控制块
+        tcp_pcb1 = tcp_new();
+        if (tcp_pcb1 == NULL) {
+            xil_printf("Client1: 创建TCP控制块失败\n");
+            vTaskDelay(pdMS_TO_TICKS(1000));
+            continue;
+        }
+
+        // 设置TCP控制块参数
+        err = tcp_bind(tcp_pcb1, IP_ADDR_ANY, 0);
+        if (err != ERR_OK) {
+            xil_printf("Client1: 绑定TCP控制块失败: %d\n", err);
+            tcp_close(tcp_pcb1);
+            vTaskDelay(pdMS_TO_TICKS(1000));
+            continue;
+        }
+
+        // 连接到服务器
+        tcp_arg(tcp_pcb1, NULL);
+        tcp_pcb1->so_options |= SOF_KEEPALIVE;
+        tcp_err(tcp_pcb1, tcp_client1_error);
+        err = tcp_connect(tcp_pcb1, &server_ip, SERVER_PORT1, tcp_client1_connected);
+        if (err != ERR_OK) {
+            xil_printf("Client1: 发起连接失败: %d\n", err);
+            tcp_close(tcp_pcb1);
+            vTaskDelay(pdMS_TO_TICKS(1000));
+            continue;
+        }
+
+        // 等待连接建立
+        xSemaphoreTake(connection_semaphore1, portMAX_DELAY);
+
+        // 连接建立后，进入数据发送循环
+        while (is_connected1) {
+            // 发送数据
+            const char *data = "Hello from Client1";
+            err = tcp_write(tcp_pcb1, data, strlen(data), TCP_WRITE_FLAG_COPY);
+            if (err != ERR_OK) {
+                xil_printf("Client1: 发送数据失败: %d\n", err);
+                is_connected1 = 0;
+                break;
+            }
+            err = tcp_output(tcp_pcb1);
+            if (err != ERR_OK) {
+                xil_printf("Client1: 输出数据失败: %d\n", err);
+                is_connected1 = 0;
+                break;
+            }
+
+            xil_printf("Client1: 数据已发送\n");
+            vTaskDelay(pdMS_TO_TICKS(5000));
+        }
+
+        // 连接断开，清理资源
+        if (tcp_pcb1 != NULL) {
+            tcp_close(tcp_pcb1);
+            tcp_pcb1 = NULL;
+        }
+
+        // 延时后重新连接
+        vTaskDelay(pdMS_TO_TICKS(2000));
+    }
+}
+
+static void Task_TCP_Client2(void *pvParameters) {
+    ip_addr_t server_ip;
+    err_t err;
+
+    // 解析服务器IP地址
+    IP4_ADDR(&server_ip, 192, 168, 1, 100);
+
+    while(1) {
+        // 创建新的TCP控制块
+        tcp_pcb2 = tcp_new();
+        if (tcp_pcb2 == NULL) {
+            xil_printf("Client2: 创建TCP控制块失败\n");
+            vTaskDelay(pdMS_TO_TICKS(1000));
+            continue;
+        }
+
+        // 设置TCP控制块参数
+        err = tcp_bind(tcp_pcb2, IP_ADDR_ANY, 0);
+        if (err != ERR_OK) {
+            xil_printf("Client2: 绑定TCP控制块失败: %d\n", err);
+            tcp_close(tcp_pcb2);
+            vTaskDelay(pdMS_TO_TICKS(1000));
+            continue;
+        }
+
+        // 连接到服务器
+        tcp_arg(tcp_pcb2, NULL);
+        tcp_pcb2->so_options |= SOF_KEEPALIVE;
+        tcp_err(tcp_pcb2, tcp_client2_error);
+        err = tcp_connect(tcp_pcb2, &server_ip, SERVER_PORT2, tcp_client2_connected);
+        if (err != ERR_OK) {
+            xil_printf("Client2: 发起连接失败: %d\n", err);
+            tcp_close(tcp_pcb2);
+            vTaskDelay(pdMS_TO_TICKS(1000));
+            continue;
+        }
+
+        // 等待连接建立
+        xSemaphoreTake(connection_semaphore2, portMAX_DELAY);
+
+        // 连接建立后，进入数据发送循环
+        while (is_connected2) {
+            // 发送数据
+            const char *data = "Hello from Client2";
+            err = tcp_write(tcp_pcb2, data, strlen(data), TCP_WRITE_FLAG_COPY);
+            if (err != ERR_OK) {
+                xil_printf("Client2: 发送数据失败: %d\n", err);
+                is_connected2 = 0;
+                break;
+            }
+            err = tcp_output(tcp_pcb2);
+            if (err != ERR_OK) {
+                xil_printf("Client2: 输出数据失败: %d\n", err);
+                is_connected2 = 0;
+                break;
+            }
+
+            xil_printf("Client2: 数据已发送\n");
+            vTaskDelay(pdMS_TO_TICKS(5000));
+        }
+
+        // 连接断开，清理资源
+        if (tcp_pcb2 != NULL) {
+            tcp_close(tcp_pcb2);
+            tcp_pcb2 = NULL;
+        }
+
+        // 延时后重新连接
+        vTaskDelay(pdMS_TO_TICKS(2000));
+    }
+}
+
+static err_t tcp_client1_connected(void *arg, struct tcp_pcb *tpcb, err_t err) {
+    if (err != ERR_OK) {
+        xil_printf("Client1: 连接失败: %d\n", err);
+        xSemaphoreGive(connection_semaphore1);
+        return err;
+    }
+
+    xil_printf("Client1: 已连接到服务器 %s:%d\n", SERVER_IP1, SERVER_PORT1);
+    is_connected1 = 1;
+
+    // 设置接收回调函数
+    tcp_recv(tpcb, tcp_client1_received);
+
+    // 发送初始数据
+    const char *data = "Connection from Client1";
+    err = tcp_write(tpcb, data, strlen(data), TCP_WRITE_FLAG_COPY);
+    if (err == ERR_OK) {
+        err = tcp_output(tpcb);
+    }
+
+    if (err != ERR_OK) {
+        xil_printf("Client1: 发送初始数据失败: %d\n", err);
+        is_connected1 = 0;
+        tcp_close(tpcb);
+    }
+
+    xSemaphoreGive(connection_semaphore1);
+    return ERR_OK;
+}
+
+static err_t tcp_client1_received(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err) {
+    if (p == NULL) {
+        // 连接关闭
+        xil_printf("Client1: 服务器关闭连接\n");
+        is_connected1 = 0;
+        tcp_close(tpcb);
+        return ERR_OK;
+    }
+
+    // 处理接收到的数据
+    xil_printf("Client1: 收到数据长度 %d\n", p->len);
+    xil_printf("Client1: 数据内容: %.*s\n", p->len, (char*)p->payload);
+
+    // 释放pbuf
+    pbuf_free(p);
+    return ERR_OK;
+}
+
+static void tcp_client1_error(void *arg, err_t err) {
+    xil_printf("Client1: 发生错误: %d\n", err);
+    is_connected1 = 0;
+    if (tcp_pcb1 != NULL) {
+        tcp_close(tcp_pcb1);
+        tcp_pcb1 = NULL;
+    }
+    xSemaphoreGive(connection_semaphore1);
+}
+
+static err_t tcp_client2_connected(void *arg, struct tcp_pcb *tpcb, err_t err) {
+    if (err != ERR_OK) {
+        xil_printf("Client2: 连接失败: %d\n", err);
+        xSemaphoreGive(connection_semaphore2);
+        return err;
+    }
+
+    xil_printf("Client2: 已连接到服务器 %s:%d\n", SERVER_IP2, SERVER_PORT2);
+    is_connected2 = 1;
+
+    // 设置接收回调函数
+    tcp_recv(tpcb, tcp_client2_received);
+
+    // 发送初始数据
+    const char *data = "Connection from Client2";
+    err = tcp_write(tpcb, data, strlen(data), TCP_WRITE_FLAG_COPY);
+    if (err == ERR_OK) {
+        err = tcp_output(tpcb);
+    }
+
+    if (err != ERR_OK) {
+        xil_printf("Client2: 发送初始数据失败: %d\n", err);
+        is_connected2 = 0;
+        tcp_close(tpcb);
+    }
+
+    xSemaphoreGive(connection_semaphore2);
+    return ERR_OK;
+}
+
+static err_t tcp_client2_received(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err) {
+    if (p == NULL) {
+        // 连接关闭
+        xil_printf("Client2: 服务器关闭连接\n");
+        is_connected2 = 0;
+        tcp_close(tpcb);
+        return ERR_OK;
+    }
+
+    // 处理接收到的数据
+    xil_printf("Client2: 收到数据长度 %d\n", p->len);
+    xil_printf("Client2: 数据内容: %.*s\n", p->len, (char*)p->payload);
+
+    // 释放pbuf
+    pbuf_free(p);
+    return ERR_OK;
+}
+
+static void tcp_client2_error(void *arg, err_t err) {
+    xil_printf("Client2: 发生错误: %d\n", err);
+    is_connected2 = 0;
+    if (tcp_pcb2 != NULL) {
+        tcp_close(tcp_pcb2);
+        tcp_pcb2 = NULL;
+    }
+    xSemaphoreGive(connection_semaphore2);
+}
+
+static void SystemInit(void) {
+    init_platform();
+
+    // 初始化中断控制器
+    Xil_ExceptionInit();
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+                                (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                NULL);
+    Xil_ExceptionEnable();
+}
+
+static void LwIPInit(void) {
+    // 初始化网络接口
+    xemacpsif_init();
+
+    // 设置IP地址
+    struct ip_addr ipaddr, netmask, gw;
+    IP4_ADDR(&ipaddr, 192, 168, 1, 101);  // 客户端IP
+    IP4_ADDR(&netmask, 255, 255, 255, 0);
+    IP4_ADDR(&gw, 192, 168, 1, 1);
+
+    // 初始化lwIP
+    lwip_init();
+
+    // 设置默认网络接口
+    struct netif *netif = &xemacpsif_netif;
+    netif_add(netif, &ipaddr, &netmask, &gw, NULL,
+              &ethernetif_init, &tcpip_input);
+    netif_set_up(netif);
+    netif_set_default(netif);
+}

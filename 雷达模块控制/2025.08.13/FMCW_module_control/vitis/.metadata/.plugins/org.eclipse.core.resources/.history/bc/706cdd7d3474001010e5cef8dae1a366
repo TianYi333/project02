@@ -1,0 +1,51 @@
+#ifndef SRC_MAIN_H_
+#define SRC_MAIN_H_
+
+#include <unistd.h>
+#include "netif/xadapter.h"
+#include "platform_config.h"
+#include "xil_printf.h"
+#include "lwip/init.h"
+#include "lwip/inet.h"
+#include "lwip/dhcp.h"
+#include "lwipopts.h"
+#include "xlwipconfig.h"
+#include "lwip/tcp.h"
+#include "lwip/ip_addr.h"
+#include "lwip/sockets.h"
+#include "lwip/sys.h"
+#include "freertos_tcp_perf_client.h"
+#include "md5.h"
+
+
+//#define DDR_BASE_ADDR  0x10000000  // DDR起始地址(根据你的链接脚本调整)
+//#define DATA_SIZE      (256 * 1024 * 1024) // 256MB
+
+/* 声明链接脚本中定义的符号 */
+extern uint8_t __recv_buffer_start[];
+extern uint8_t __recv_buffer_end[];
+#define RECV_BUFFER_SIZE ((size_t)(__recv_buffer_end - __recv_buffer_start))
+#define RECV_BUFFER_SIZE 16000
+
+#define THREAD_STACKSIZE 1024
+#define TCP_CLIENT_THREAD_STACKSIZE 2048
+
+#define DEFAULT_IP_ADDRESS	"192.168.1.10"
+#define DEFAULT_IP_MASK		"255.255.255.0"
+#define DEFAULT_GW_ADDRESS	"192.168.1.1"
+
+
+#define TCP_SERVER_IP_ADDRESS "192.168.1.6"
+#define TCP_Server_CONN_PORT2 5000
+#define TCP_Client_CONN_PORT1 4060
+#define TCP_Client_CONN_PORT2 4061
+
+
+extern QueueHandle_t Lwip_Server_Send_Queue;/* 以太网数据发送队列 */
+extern QueueHandle_t Lwip_Clientr1_Recv_Queue;/* 以太网客户端数据接收队列 */
+extern QueueHandle_t Lwip_Clientr1_Send_Queue;/* 以太网客户端数据发送队列 */
+
+extern uint8_t FLAG_MD5_check;
+
+
+#endif /* SRC_MAIN_H_ */

@@ -1,0 +1,81 @@
+timestamp=[2025-07-29 09:51:51], mode=WORKBENCH_START, duration=0:00:03.576, duration_ms=3576, data={}
+timestamp=[2025-07-29 09:51:52], mode=WORKBENCH_UI_INIT, duration=0:00:00.410, duration_ms=410, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2025-07-29 09:51:52], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.034, duration_ms=34, data={}
+timestamp=[2025-07-29 09:55:03], mode=WORKBENCH_START, duration=0:00:02.802, duration_ms=2802, data={}
+timestamp=[2025-07-29 09:55:04], mode=WORKBENCH_UI_INIT, duration=0:00:00.560, duration_ms=560, data={editors_count=0, platform_editors_count=0, projects_count=1, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles}
+timestamp=[2025-07-29 09:55:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.024, duration_ms=24, data={}
+timestamp=[2025-07-29 09:57:17], mode=APP_CREATION, duration=0:00:10.100, duration_ms=10100, data={name=FMCW_module_control, project_type=sdk, os=freertos10_xilinx, processor=ps7_cortexa9, runtime=cpp, platform=system_wrapper, application_type=application}
+timestamp=[2025-07-29 10:44:13], mode=PLATFORM_GENERATION, duration=0:01:18.686, duration_ms=78686, data={name=system_wrapper}
+timestamp=[2025-07-29 10:44:15], mode=BUILD, duration=0:00:02.005, duration_ms=2005, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 10:51:45], mode=PLATFORM_GENERATION, duration=0:01:35.409, duration_ms=95409, data={name=system_wrapper}
+timestamp=[2025-07-29 10:51:50], mode=BUILD, duration=0:00:04.289, duration_ms=4289, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 10:52:03], mode=BUILD, duration=0:00:12.344, duration_ms=12344, data={name=FMCW_module_control_system, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 10:56:34], mode=BUILD, duration=0:00:02.959, duration_ms=2959, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 11:19:43], mode=WORKBENCH_START, duration=0:00:04.675, duration_ms=4675, data={}
+timestamp=[2025-07-29 11:19:44], mode=WORKBENCH_UI_INIT, duration=0:00:00.428, duration_ms=428, data={editors_count=8, platform_editors_count=5, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=FMCW_module_control,FMCW_module_control_system,RemoteSystemsTempFiles,system_wrapper}
+timestamp=[2025-07-29 11:19:44], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.017, duration_ms=17, data={}
+timestamp=[2025-07-29 14:56:23], mode=PLATFORM_GENERATION, duration=0:00:52.129, duration_ms=52129, data={name=system_wrapper}
+timestamp=[2025-07-29 14:56:25], mode=BUILD, duration=0:00:01.978, duration_ms=1978, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 14:58:55], mode=PLATFORM_GENERATION, duration=0:01:05.750, duration_ms=65750, data={name=system_wrapper}
+timestamp=[2025-07-29 15:02:24], mode=PLATFORM_GENERATION, duration=0:01:25.943, duration_ms=85943, data={name=system_wrapper}
+timestamp=[2025-07-29 15:03:22], mode=BUILD, duration=0:00:04.392, duration_ms=4392, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 15:03:35], mode=BUILD, duration=0:00:11.758, duration_ms=11758, data={name=FMCW_module_control_system, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 15:35:21], mode=PLATFORM_GENERATION, duration=0:01:28.444, duration_ms=88444, data={name=system_wrapper}
+timestamp=[2025-07-29 15:35:26], mode=BUILD, duration=0:00:04.288, duration_ms=4288, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 15:35:39], mode=BUILD, duration=0:00:11.913, duration_ms=11913, data={name=FMCW_module_control_system, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 15:39:07], mode=BUILD, duration=0:00:01.453, duration_ms=1453, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 15:39:21], mode=BUILD, duration=0:00:11.763, duration_ms=11763, data={name=FMCW_module_control_system, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 17:01:41], mode=BUILD, duration=0:00:01.812, duration_ms=1812, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 17:02:10], mode=BUILD, duration=0:00:01.720, duration_ms=1720, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 17:04:28], mode=BUILD, duration=0:00:02.434, duration_ms=2434, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-29 17:04:52], mode=BUILD, duration=0:00:00.686, duration_ms=686, data={name=FMCW_module_control, configuration=Debug, clean_build=true}
+timestamp=[2025-07-29 17:04:56], mode=BUILD, duration=0:00:04.155, duration_ms=4155, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 10:23:47], mode=BUILD, duration=0:00:07.515, duration_ms=7515, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 11:00:04], mode=PLATFORM_GENERATION, duration=0:29:46.257, duration_ms=1786257, data={name=system_wrapper}
+timestamp=[2025-07-31 11:00:12], mode=BUILD, duration=0:00:07.800, duration_ms=7800, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 11:00:47], mode=BUILD, duration=0:00:32.320, duration_ms=32320, data={name=FMCW_module_control_system, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 16:54:31], mode=BUILD, duration=0:00:05.108, duration_ms=5108, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 16:54:56], mode=BUILD, duration=0:00:05.051, duration_ms=5051, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 16:57:31], mode=BUILD, duration=0:00:05.053, duration_ms=5053, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:20:33], mode=BUILD, duration=0:00:02.233, duration_ms=2233, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:21:07], mode=BUILD, duration=0:00:05.042, duration_ms=5042, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:28:13], mode=BUILD, duration=0:00:05.804, duration_ms=5804, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:33:39], mode=BUILD, duration=0:00:02.343, duration_ms=2343, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:35:28], mode=BUILD, duration=0:00:02.303, duration_ms=2303, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:35:45], mode=BUILD, duration=0:00:02.273, duration_ms=2273, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:36:23], mode=BUILD, duration=0:00:02.331, duration_ms=2331, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:36:57], mode=BUILD, duration=0:00:02.317, duration_ms=2317, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:37:16], mode=BUILD, duration=0:00:06.755, duration_ms=6755, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:39:31], mode=BUILD, duration=0:00:07.419, duration_ms=7419, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:40:25], mode=BUILD, duration=0:00:02.663, duration_ms=2663, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:41:09], mode=BUILD, duration=0:00:02.516, duration_ms=2516, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:41:50], mode=BUILD, duration=0:00:04.270, duration_ms=4270, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:42:03], mode=BUILD, duration=0:00:05.045, duration_ms=5045, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:46:22], mode=BUILD, duration=0:00:05.444, duration_ms=5444, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:47:35], mode=BUILD, duration=0:00:05.689, duration_ms=5689, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:58:38], mode=BUILD, duration=0:00:02.528, duration_ms=2528, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:59:00], mode=BUILD, duration=0:00:02.369, duration_ms=2369, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 17:59:46], mode=BUILD, duration=0:00:02.422, duration_ms=2422, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 18:01:22], mode=BUILD, duration=0:00:05.038, duration_ms=5038, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 18:04:01], mode=BUILD, duration=0:00:05.068, duration_ms=5068, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 18:07:58], mode=BUILD, duration=0:00:05.058, duration_ms=5058, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 18:09:31], mode=BUILD, duration=0:00:04.848, duration_ms=4848, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-07-31 18:13:59], mode=BUILD, duration=0:00:01.245, duration_ms=1245, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 09:07:53], mode=BUILD, duration=0:00:01.151, duration_ms=1151, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 09:10:37], mode=BUILD, duration=0:00:04.938, duration_ms=4938, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 09:11:42], mode=BUILD, duration=0:00:05.002, duration_ms=5002, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 09:19:11], mode=BUILD, duration=0:00:04.898, duration_ms=4898, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 09:19:22], mode=BUILD, duration=0:00:05.061, duration_ms=5061, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 09:22:19], mode=BUILD, duration=0:00:04.947, duration_ms=4947, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 09:23:55], mode=BUILD, duration=0:00:05.072, duration_ms=5072, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 09:24:39], mode=BUILD, duration=0:00:05.196, duration_ms=5196, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 09:39:01], mode=BUILD, duration=0:00:04.996, duration_ms=4996, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 14:46:18], mode=BUILD, duration=0:00:02.714, duration_ms=2714, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 14:46:45], mode=BUILD, duration=0:00:02.611, duration_ms=2611, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 14:47:11], mode=BUILD, duration=0:00:05.764, duration_ms=5764, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 15:32:02], mode=BUILD, duration=0:00:04.213, duration_ms=4213, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 15:33:04], mode=BUILD, duration=0:00:02.503, duration_ms=2503, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 15:34:49], mode=BUILD, duration=0:00:06.595, duration_ms=6595, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 15:36:02], mode=BUILD, duration=0:00:02.256, duration_ms=2256, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 15:36:16], mode=BUILD, duration=0:00:02.521, duration_ms=2521, data={name=FMCW_module_control, configuration=Debug, clean_build=false}
+timestamp=[2025-08-01 15:36:29], mode=BUILD, duration=0:00:07.132, duration_ms=7132, data={name=FMCW_module_control, configuration=Debug, clean_build=false}

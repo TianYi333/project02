@@ -1,0 +1,24 @@
+#ifndef __XEMACPSIF_H__
+#define __XEMACPSIF_H__
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include "lwip/err.h"
+#include "lwip/netif.h"
+#include "xemacps.h"
+
+extern struct netif xemacpsif_netif;
+
+/* º¯ÊýÉùÃ÷ */
+err_t ethernetif_init(struct netif *netif);
+void xemacpsif_input(void *p);
+void xemacpsif_init(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __XEMACPSIF_H__ */
+

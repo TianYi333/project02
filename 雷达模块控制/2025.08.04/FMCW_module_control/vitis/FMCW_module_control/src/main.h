@@ -1,0 +1,39 @@
+#ifndef SRC_MAIN_H_
+#define SRC_MAIN_H_
+
+#include <unistd.h>
+#include "netif/xadapter.h"
+#include "platform_config.h"
+#include "xil_printf.h"
+#include "lwip/init.h"
+#include "lwip/inet.h"
+#include "lwip/dhcp.h"
+#include "lwipopts.h"
+#include "xlwipconfig.h"
+#include "lwip/tcp.h"
+#include "lwip/ip_addr.h"
+#include "lwip/sockets.h"
+#include "lwip/sys.h"
+#include "freertos_tcp_perf_client.h"
+
+#define THREAD_STACKSIZE 1024
+#define TCP_CLIENT_THREAD_STACKSIZE 2048
+
+#define DEFAULT_IP_ADDRESS	"192.168.1.10"
+#define DEFAULT_IP_MASK		"255.255.255.0"
+#define DEFAULT_GW_ADDRESS	"192.168.1.1"
+
+
+#define TCP_SERVER_IP_ADDRESS "192.168.1.2"
+#define TCP_Server_CONN_PORT2 5000
+#define TCP_Client_CONN_PORT1 5001
+#define TCP_Client_CONN_PORT2 5002
+
+
+extern QueueHandle_t Lwip_Server_Send_Queue;/* 以太网数据发送队列 */
+
+
+
+
+
+#endif /* SRC_MAIN_H_ */
